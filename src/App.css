@@ -1,38 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .App {
-  text-align: center;
+    text-align: center;
+    background-color: #362222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media only screen and (max-width: 480px) {
+
+    .titleNavBar {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .siteTitle{
+        padding-top: 10px;
+
+    }
+
+    .welcome{
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 20px;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media only screen and (min-width: 480px) {
+
+    .siteTitle{
+        padding-top: 20px;
+        margin-bottom: 20px;
+        font-size: 80px;
+    }
+
+    .welcome{
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 40px;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.siteTitle{
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    background-color: #362222;
+    color: white;
+    font-weight: bolder;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar1{
+    background-color: #362222;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcome{
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.welcomeTitle{
+    color: #925C5C;
+    font-size: 35px;
+    font-weight: bold;
+}
+.welcomeButton{
+    background-color: #362222 !important;
+    border-color: #362222 !important;
+    color: white;
 }
